@@ -4,9 +4,7 @@
 #include <mruby/string.h>
 #include <mruby/variable.h>
 
-#ifdef __APPLE__
-#include <SDL2_mixer/SDL_mixer.h>
-#elif __EMSCRIPTEN__
+#if __EMSCRIPTEN__
 #include <emscripten.h>
 #include <SDL/SDL_mixer.h> // SDL1
 #else
